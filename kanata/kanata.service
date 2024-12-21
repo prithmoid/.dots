@@ -11,7 +11,7 @@ Documentation=https://github.com/jtroo/kanata
 Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
 Environment=DISPLAY=:0
 Type=simple
-ExecStart=/usr/local/bin/kanata --cfg /home/prithmoid/kanata/simple.kbd
+ExecStart=kanata --cfg /home/prithmoid/kanata/simple.kbd
 Restart=never
 
 [Install]

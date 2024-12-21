@@ -149,7 +149,12 @@ alias gs="git status"                        # Show git status
 alias ga="git add"                           # Add changes to staging
 alias gc="git commit"                        # Commit changes
 alias gp="git push"                          # Push to remote repository
+alias gpl="git pull"                          # Push to remote repository
 alias gl="git log --oneline --graph"         # Show a concise commit graph
+alias gd="git diff"                          # Push to remote repository
+alias gai='git diff | sgpt "Generate git commit message, for my changes without extra explanation"'
+alias gcai='gai && git add -u | xargs -I {} git commit -m {}'
+alias grf='gpl && gp'
 
 alias mirror="sudo reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlist" # Update mirrorlist
 alias downgrade="downgrade"                 # Use the `downgrade` package
@@ -169,3 +174,8 @@ alias rm="rm -I --preserve-root"             # Prevent accidental deletion
 
 alias n='nvim'
 alias reload='exec zsh'
+
+alias python3='python3.10'
+alias python='python3.10'
+alias pip3='python3.10 -m pip'
+alias pip='python3.10 -m pip'
